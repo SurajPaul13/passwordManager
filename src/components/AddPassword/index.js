@@ -1,11 +1,10 @@
-import '@fortawesome/fontawesome-free/css/all.min.css'
 import {v4 as uuidv4} from 'uuid'
 import {Component} from 'react'
 
 import './index.css'
 
 class AddPassword extends Component {
-  state = {website: '', username: '', password: '', showPassword: false}
+  state = {website: '', username: '', password: ''}
 
   onChangeWebsite = event => {
     this.setState({website: event.target.value})
@@ -43,7 +42,7 @@ class AddPassword extends Component {
   }
 
   render() {
-    const {website, username, password, showPassword} = this.state
+    const {website, username, password} = this.state
 
     return (
       <form className="add-pswd-card" onSubmit={this.onSubmitPassword}>
@@ -55,7 +54,7 @@ class AddPassword extends Component {
             className="input-images"
           />
           <input
-            type="search"
+            type="text"
             placeholder="Enter Website"
             className="input-element"
             value={website}
@@ -69,7 +68,7 @@ class AddPassword extends Component {
             className="input-images"
           />
           <input
-            type="search"
+            type="text"
             placeholder="Enter Username"
             className="input-element"
             value={username}
@@ -88,19 +87,8 @@ class AddPassword extends Component {
               className="password-element"
               value={password}
               onChange={this.onChangePassword}
-              type={showPassword ? 'text' : 'password'}
+              type="password"
             />
-            <button
-              type="button"
-              className="show-hide-button"
-              onClick={this.onToggleShowPassword}
-            >
-              {showPassword ? (
-                <i className="fas fa-eye-slash" />
-              ) : (
-                <i className="fas fa-eye" />
-              )}
-            </button>
           </div>
         </div>
         <div className="add-password-button-div">

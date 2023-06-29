@@ -55,6 +55,7 @@
 .show-hide-button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .add-password-button-div {
   display: flex;

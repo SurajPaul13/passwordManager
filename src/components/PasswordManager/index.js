@@ -36,14 +36,14 @@ class PasswordManager extends Component {
   }
 
   onChangeSearch = event => {
-    const searchValue = event.target.value.toLowerCase()
+    const search = event.target.value
     const {passwordList} = this.state
 
     const filteredData = passwordList.filter(eachWebsite =>
-      eachWebsite.website.toLowerCase().includes(searchValue),
+      eachWebsite.website.toLowerCase().includes(search.toLowerCase()),
     )
 
-    this.setState({search: searchValue, passwordCount: filteredData.length})
+    this.setState({search, passwordCount: filteredData.length})
   }
 
   toggleShowPassword = () =>
@@ -126,9 +126,9 @@ class PasswordManager extends Component {
       <img
         className="password-manager-logo"
         src="https://assets.ccbp.in/frontend/react-js/no-passwords-img.png"
-        alt=" no passwords"
+        alt="no passwords"
       />
-      <h1 className="no-passwords">No Passwords</h1>
+      <p className="no-passwords">No Passwords</p>
     </div>
   )
 
