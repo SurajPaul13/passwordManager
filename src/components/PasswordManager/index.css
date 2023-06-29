@@ -1,0 +1,98 @@
+.password-manager-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #9ba9eb;
+}
+.password-manager-div {
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+}
+.app-logo {
+  height: 40px;
+  margin-bottom: 20px;
+}
+.add-password-container {
+  background-color: #5763a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+.password-manager-logo {
+  height: 300px;
+}
+.saved-passwords-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #5763a5;
+  padding: 30px;
+  padding-top: 20px;
+  border-radius: 10px;
+  width: 80%;
+}
+.saved-passwords-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+}
+.password-count-container {
+  display: flex;
+  align-items: center;
+}
+.password-header-heading {
+  color: #f8fafc;
+  font-size: 20px;
+  font-weight: 450;
+  margin-right: 40px;
+}
+.password-count {
+  background-color: transparent;
+  border: solid 1px #f8fafc;
+  padding: 2px 10px 2px 10px;
+  border-radius: 40%;
+  color: #f8fafc;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  height: 100%;
+}
+.line {
+  width: 100%;
+  margin-top: 20px;
+}
+.show-password-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.show-password {
+  color: #ffffff;
+}
+.saved-passwords-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  list-style-type: none;
+  padding-left: 0;
+}
+.no-passwords-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-passwords {
+  font-family: 'Roboto';
+  font-size: 30px;
+  color: #ffffff;
+}

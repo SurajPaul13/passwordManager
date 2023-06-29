@@ -1,0 +1,70 @@
+.add-pswd-card {
+  background-color: #454f84;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 50px;
+}
+.add-pswd-heading {
+  color: #f8fafc;
+  font-size: 20px;
+  font-weight: 450;
+  margin-bottom: 30px;
+}
+.input-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: solid 1px #94a3b8;
+  background-color: #ffffff;
+  width: 35vw;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.input-images {
+  height: 20px;
+  margin: 10px;
+}
+
+.input-element {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  width: 90%;
+  border-left: solid 1px #454f84;
+  padding-left: 10px;
+  outline: none;
+}
+.password-input-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  height: 100%;
+  width: 90%;
+  border-left: solid 1px #454f84;
+  outline: none;
+}
+.password-element {
+  padding-left: 10px;
+  border: none;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  outline: none;
+}
+.show-hide-button {
+  background-color: transparent;
+  border: none;
+}
+.add-password-button-div {
+  display: flex;
+  justify-content: flex-end;
+}
+.add-btn {
+  background-color: #0b69ff;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+}
